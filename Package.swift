@@ -19,7 +19,7 @@ let package = Package(
         .package(url: "https://github.com/eneko/ProcessRunner.git", from: "1.1.0")
     ],
     targets: [
-        .target(name: "SourceDocsCLI", dependencies: [
+        .executableTarget(name: "SourceDocsCLI", dependencies: [
             .product(name: "ArgumentParser", package: "swift-argument-parser"),
             "SourceDocsLib",
             "Rainbow"
