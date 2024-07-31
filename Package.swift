@@ -1,11 +1,11 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.7
 import PackageDescription
 import Foundation
 
 let package = Package(
     name: "SourceDocs",
     platforms: [
-        .macOS(.v10_15)
+        .macOS(.v12)
     ],
     products: [
         .executable(name: "sourcedocs", targets: ["SourceDocsCLI"]),
